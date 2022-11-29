@@ -7,12 +7,12 @@ public class Main {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
-        int p,l;
+
+        int x,y;
         System.out.print("masukan panjang: ");
-        p = sc.nextInt();
+        x = sc.nextInt();
         System.out.print("masukan lebar: ");
-        l = sc.nextInt();
+        y = sc.nextInt();
 
         Lingkaran lingsatu = new Lingkaran(y);
         Persegi persegisatu = new Persegi(x,y);
