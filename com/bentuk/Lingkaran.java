@@ -3,40 +3,33 @@ package com.bentuk;
 
 import com.base.BangunDatar;
 
+
 public class Lingkaran implements BangunDatar {
     
-    int panjang;
-    int lebar;
-    double PI;
+    int jari_jari;
 
-    public Lingkaran (int panjang, int lebar){
-        this.panjang = panjang;
-        this.lebar = lebar;
-        PI = Math.PI;
+    public Lingkaran (int jari_jari){
+        this.jari_jari = jari_jari;
     }
 
     @Override
     public void tampilluas(){
-        
+        System.out.println("luas lingkaran: " + luas());
     }
 
     @Override
-    public int panjang() {
-        return this.panjang;
+    public int panjang(){
+        return this.jari_jari;
     }
 
     @Override
     public int lebar() {
-        return this.lebar;
+        return this.jari_jari;
     }
 
     @Override
-    public int luas(){
-        return panjang * lebar;
-    }
-
-    public double getPI(){
-        return PI;
+    public double luas(){
+        return (double)Math.PI * (jari_jari * jari_jari);
     }
     
 }
